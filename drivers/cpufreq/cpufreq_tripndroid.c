@@ -443,7 +443,7 @@ static ssize_t store_down_sample_time(struct kobject *kobj,
 	return count;
 }
 
-static struct kobj_attribute down_sample_time_attr = __ATTR(down_sample_time, 0644,
+static struct global_attr down_sample_time_attr = __ATTR(down_sample_time, 0644,
 		show_down_sample_time, store_down_sample_time);
 
 static ssize_t show_up_sample_time(struct kobject *kobj,
@@ -465,7 +465,7 @@ static ssize_t store_up_sample_time(struct kobject *kobj,
 	return count;
 }
 
-static struct kobj_attribute up_sample_time_attr = __ATTR(up_sample_time, 0644,
+static struct global_attr up_sample_time_attr = __ATTR(up_sample_time, 0644,
 		show_up_sample_time, store_up_sample_time);
 
 static struct attribute *tripndroid_attributes[] = {
